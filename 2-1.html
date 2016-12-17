@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=yes">
+    <title>Page</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="asset/css/style.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="asset/js/hj.js"></script>
+</head>
+
+<body class="page21">
+    <div data-role="page" id="demo-page" data-theme="d" data-url="demo-page">
+
+        <div data-role="panel" id="left-panel" data-theme="b" data-display="overlay">
+            <div class="row">
+              <div id="panel-logo" class="backgroundBlue">
+                <img src="asset/images/sidelogo.jpg">
+              </div>
+            </div>
+            <div class="row">
+              <div id="panel-menu">
+                <ul>
+                  <li class="backgroundBlue profile"><h2>조덕기</h2><span>서비스 1팅 / 팀장<span></li>
+                  <li class="blue"><h2>주요기능</h2></li>
+                  <li class="blue"><h2>스마트 NC 홈</h2></li>
+                  <li class="blue"><h2>내 프로필</h2></li>
+                  <li class="blue"><h2>문의하기</h2></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- /사이드메뉴 -->
+
+
+        <div data-role="header" data-theme="b" class="header backgroundBlue">
+            <h1>페이지이름</h1>
+            <a href="#left-panel" id="sideOpener" data-theme="d" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open left panel</a>
+        </div>
+        <!-- /헤더 -->
+
+        <div data-role="content">
+          <div class="row">
+
+            <div class="row-in-row">
+              <div class="inLine alignLeft">전체 NC 26건</div>
+              <div class="inLine alignRight">완료 NC 16건</div>
+            </div>
+
+            <div class="row-in-row">
+              <div class="inLine alignLeft blue">전체 NC 26건</div>
+              <div class="inLine alignRight blue showBox">
+                화살표아이콘
+              </div>
+            </div>
+
+            <div class="clickShowBox row-in-row">
+              <ul>
+                <li>출하대기 4건</li>
+                <li>예정일대기 3건</li>
+                <li>판정대기 1건</li>
+                <li>승인대기 1건</li>
+                <li>반려 1건</li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- 전체 NC -->
+
+          <div class="row">
+            <div class="row-in-row">
+              <div class="inLine col23">
+                <p>1T20163317.A <span class="date-page-21">1982.07.09</span></p>
+                <p class="blue">PWB-PL:CN-18 / NC16090120</p>
+                <p>100670882</p>
+                <p>권선동 1013-12</p>
+              </div>
+              <div class="inLine col13">
+                <div class="alignCenter">
+                  승인대기
+                </div>
+              </div>
+            </div>
+
+            <div class="row-in-row">
+              <div class="inLine col23">
+                <p>1T20163317.A <span class="date-page-21">1982.07.09</span></p>
+                <p class="blue">PWB-PL:CN-18 / NC16090120</p>
+                <p>100670882</p>
+                <p>권선동 1013-12</p>
+              </div>
+              <div class="inLine col13">
+                <div class="alignCenter">
+                  승인대기
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- NC들 리스트 -->
+
+        </div>
+        <!-- /바디 -->
+        <div id="footerBtn" class="row backgroundBlue alignCenter">
+          버튼 이름
+        </div>
+
+    </div>
+
+</body>
+
+</html>
