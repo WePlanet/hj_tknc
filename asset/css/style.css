@@ -59,6 +59,14 @@ li{
 .col23{
   width: 66%;
 }
+.hidePage{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 100vh;
+  background: red;
+}
 /*===== 헤더 ======*/
 .header{
   padding: 10px;
