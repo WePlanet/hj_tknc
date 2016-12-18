@@ -61,6 +61,9 @@ a{
   color: #6E7D91;
   display: none;
 }
+.col12{
+  width: 49.5%;
+}
 .col13{
   width: 32%;
 }
@@ -124,6 +127,25 @@ a{
   padding-left: 15px;
 }
 
+/* ========= 2-4-0 QR스캔 팝업 ==========*/
+#popUpMSG{
+  position: relative;
+  margin: auto;
+  width: 90%;
+  margin-top:30%;
+  border-left: 1px solid #EDEFF5;
+  border-right: 1px solid #EDEFF5;
+}
+#popUpMSG>.row,#popUpMSG .row-in-row{
+  border: none;
+  width: 100%;
+}
+#popUpMSG .inLine.col12:first-of-type{
+  border-right: 1px solid #A5CCE5;
+}
+
 
 /*============= 10-2 프로필 ============*/
-.page102 .row
+.page102 .row, .page23 .row{
+  border: none;
+}
