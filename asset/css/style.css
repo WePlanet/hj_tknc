@@ -12,6 +12,9 @@ p,h1,h2,h3,h4,h5,h6,span,div{
 li{
   list-style: none;
 }
+a{
+  text-decoration: none;
+}
 /*제이쿼리가 미리 잡아놓은거 리셋*/
 .ui-content{
   padding: 0;
@@ -120,3 +123,7 @@ li{
 .page21 li{
   padding-left: 15px;
 }
+
+
+/*============= 10-2 프로필 ============*/
+.page102 .row
