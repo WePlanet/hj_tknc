@@ -16,6 +16,11 @@ li{
 .ui-content{
   padding: 0;
 }
+.ui-header>.ui-btn, .ui-footer>.ui-btn{
+  background: none;
+  border: none;
+
+}
 
 /*자주쓸클래스 미리 잡아놓자*/
 .backgroundBlue{
