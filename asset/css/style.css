@@ -19,7 +19,7 @@ a{
 .ui-content{
   padding: 0;
 }
-.ui-shadow,.ui-header>.ui-btn, .ui-footer>.ui-btn,.ui-btn-inner,.ui-btn-up-d,div.ui-input-text,.ui-input-text.ui-focus{
+.ui-bar-b,.ui-shadow,.ui-header>.ui-btn, .ui-footer>.ui-btn,.ui-btn-inner,.ui-btn-up-d,div.ui-input-text,.ui-input-text.ui-focus{
   background: none;
   border: none;
   box-shadow: none;
@@ -33,6 +33,10 @@ a{
 .backgroundBlue{
   background: #0097E0;
   color: #fff;
+}
+.backgroundWhite{
+  background: #fff;
+  color: #343434;
 }
 .blue{
   color: #0097E0;
@@ -77,6 +81,9 @@ a{
 .col23{
   width: 66%;
 }
+.direction-words{
+  font-size: 0.3rem;
+}
 /*===== 헤더 ======*/
 .header{
   padding: 10px;
@@ -117,6 +124,8 @@ a{
   color: #CCE7F7;
   font-weight: 300;
 }
+/*========= 1-1-1 =========*/
+/* form 2-4-3 CSS 코드에 통합*/
 
 /* ======= 2-1 ========*/
 .page21 .inLine.col23>.blue{
@@ -167,27 +176,28 @@ a{
 }
 
 /*============== 2-4-3 =================*/
-.page243 .searchForm{
+.searchForm.blueLine{
   position: relative;
   margin: 50px auto;
   width: 80%;
   color: #686868;
 }
-.page243 .searchForm input[type="text"]{
+.searchForm.blueLine input[type="password"],.searchForm.blueLine input[type="text"]{
   border: none;
-  border-bottom: 2px solid #0097E0;
+  border-bottom: 1px solid #D7D6D7;
   margin-bottom: 20px;
 }
-.page243 .searchForm input[type="text"]:focus{
+.searchForm.blueLine input[type="password"]:focus,.searchForm.blueLine input[type="text"]:focus{
   outline: none !important;
+  border-bottom: 3px solid #0097E0;
 }
-.page243 .searchForm input[type="button"]{
+.searchForm.blueLine input[type="button"]{
   border: none;
   box-shadow: none;
   background: #0097E0;
   border-radius: 1.5em;
 }
-.page243 .searchForm .ui-btn-hidden{
+.searchForm.blueLine .ui-btn-hidden ,.page243 .searchForm .ui-btn-hidden{
   text-indent: inherit;
 }
 

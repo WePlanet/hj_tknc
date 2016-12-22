@@ -12,25 +12,32 @@
     <script src="asset/js/hj.js"></script>
 </head>
 
-<body class="page243">
-    <div data-role="page" data-theme="d">
+<body class="page112">
+    <div data-role="page" data-theme="d" data-url="demo-page">
 
-        <div data-role="header" class="header backgroundBlue">
-            <h1>검색하기</h1>
-            <a href="이전페이지url" id="sideOpener">취소</a>
+
+
+        <div data-role="header" data-theme="b" class="header backgroundWhite">
+            <h1>로그인</h1>
         </div>
         <!-- /헤더 -->
 
         <div data-role="content">
-          <form>
-            <div class="row">
-              <div class="searchForm blueLine">
-                <p>부품 번호 또는 부품명</p>
+          <div class="row">
+            <div class="searchForm blueLine">
+              <form>
+                <p>이름</p>
                 <input type="text">
-                <input type="button" value="검색 결과 확인하기" class="backgroundBlue">
-              </div>
+                <p>생년월일</p>
+                <input type="date">
+                <p>전화번호</p>
+                <input type="text">
+                <input type="button" value="로그인" class="backgroundBlue">
+                <p class="direction-words">로그인이 안되는 경우, <a href="#">패스워드 찾기</a>를 선택하거나,
+                  <a href="#">본인 인증 로그인</a>을 사용해주시기 바랍니다.
+              </form>
             </div>
-          </form>
+          </div>
         </div>
         <!-- /바디 -->
 
