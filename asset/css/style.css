@@ -38,9 +38,6 @@ a{
   background: #fff;
   color: #343434;
 }
-.backgroundWhite #sideOpener{
-  color: #000;
-}
 .blue{
   color: #0097E0;
 }
@@ -87,8 +84,15 @@ a{
 .col15{
   width: 20%;
 }
+.col45{
+  width: 79%;
+}
 .direction-words{
   font-size: 0.3rem;
+}
+.inlineTable{
+  display: inline-table;
+  vertical-align: middle;
 }
 /*===== 헤더 ======*/
 .header{
@@ -132,12 +136,24 @@ a{
 }
 /*========= 1-1-1 =========*/
 /* form 2-4-3 CSS 코드에 통합*/
-
-
-/*==========1-3=============*/
+/*===========1-3============*/
+.page13 .row{
+  padding: 10px;
+}
+.page13 .col45{
+  margin-top: 30px;
+}
 .page13 .functionIcons{
   width: 100%;
 }
+.page13 .row-in-row{
+  border: none;
+  padding-top: 0;
+}
+.page13 .row-in-row p{
+  font-size: 0.1rem;
+}
+
 /* ======= 2-1 ========*/
 .page21 .inLine.col23>.blue{
   font-size: 1.15rem;
