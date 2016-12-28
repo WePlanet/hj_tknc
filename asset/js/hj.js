@@ -13,6 +13,12 @@ $( document ).ready(function() {
       allATag[i].setAttribute('data-ajax','false');
     }
   }());
+  var allFormTag = document.getElementsByTagName('form');
+  (function(){
+    for(var i=0; i<allFormTag.length; i++){
+      allFormTag[i].setAttribute('data-ajax','false');
+    }
+  }());
 
   // 2-5-1 플러스 마이너스 버튼
   (function(){
