@@ -242,6 +242,15 @@ div.NCBirth div.ui-input-text{
 #popUpMSG .inLine>a{
   color: #fff;
 }
+.page240 form .row-in-row{
+  padding: 0;
+}
+.page240 form button h3{
+  color: #fff;
+}
+.page240 form .ui-btn-inner{
+  color: #fff;
+}
 
 /*========= 2-4-1 SBL 검색 ==========*/
 .page241 #popUpMSG{
