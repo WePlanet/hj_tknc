@@ -173,6 +173,9 @@ div.NCBirth div.ui-input-text{
 .page21 .inLine.col23>.blue{
   font-size: 1.15rem;
 }
+.page21 .row-in-row:last-of-type{
+  margin-bottom: 70px;
+}
 .date-page-21{
   position: absolute;
   right: 15px;
