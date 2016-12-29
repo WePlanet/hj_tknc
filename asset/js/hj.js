@@ -20,6 +20,20 @@ $( document ).ready(function() {
     }
   }());
 
+  // 2-2 페이지 부품 상세정보 클릭
+  (function(){
+    $('#detailNC').click(function(){
+      $('#popUpMSG').css('display','block');
+    });
+    $('#closed').click(function(){
+      $('#popUpMSG').css('display','none');
+    });
+
+
+
+  }());
+
+
   // 2-5-1 플러스 마이너스 버튼
   (function(){
     var pQ = document.getElementById("productQuantity").value;

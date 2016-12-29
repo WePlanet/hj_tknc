@@ -104,13 +104,15 @@ a{
 #sideOpener{
   top:18px;
 }
+#headerRightBtn{
+  top:18px;
+}
 /*======= 버튼 =======*/
 #footerBtn{
   position: fixed;
   bottom: 0;
   padding: 15px 0;
 }
-
 
 /* ======= 왼쪽 사이드 메뉴 ===== */
 #left-panel{
@@ -173,7 +175,7 @@ div.NCBirth div.ui-input-text{
 .page21 .inLine.col23>.blue{
   font-size: 1.15rem;
 }
-.page21 .row-in-row:last-of-type{
+.page21 .row-in-row:last-of-type, .page22 .row-in-row:last-of-type{
   margin-bottom: 70px;
 }
 .date-page-21{
@@ -186,6 +188,38 @@ div.NCBirth div.ui-input-text{
 }
 .page21 li{
   padding-left: 15px;
+}
+/*============2-2==================*/
+.page22 #footerBtn{
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+}
+.page22 #footerBtn>div{
+  padding: 15px 0;
+  display: inline-block;
+}
+.page22 #footerBtn>div:first-of-type{
+  position: absolute;
+  background: #E20047;
+  width: 30%;
+  left: 0;
+}
+.page22 #footerBtn>div:last-of-type{
+  width: 70%;
+  margin-left: 30%;
+}
+
+.page22 #popUpMSG{
+  display: none;
+  margin-top: 10%;
+  position: fixed;
+  background: #fff;
+  z-index: 9999;
+  left: 5%;
+}
+.page22 #popUpMSG .row-in-row.backgroundBlue.alignCenter{
+  margin-bottom: 0;
 }
 
 /* ========= 2-4-0 QR스캔 팝업 ==========*/
