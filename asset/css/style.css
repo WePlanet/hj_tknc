@@ -190,27 +190,27 @@ div.NCBirth div.ui-input-text{
   padding-left: 15px;
 }
 /*============2-2==================*/
-.page22 #footerBtn{
+.page22pm #footerBtn{
   position: fixed;
   bottom: 0;
   padding: 0;
 }
-.page22 #footerBtn>div{
+.page22pm #footerBtn>div{
   padding: 15px 0;
   display: inline-block;
 }
-.page22 #footerBtn>div:first-of-type{
+.page22pm #footerBtn>div:first-of-type{
   position: absolute;
   background: #E20047;
   width: 30%;
   left: 0;
 }
-.page22 #footerBtn>div:last-of-type{
+.page22pm #footerBtn>div:last-of-type{
   width: 70%;
   margin-left: 30%;
 }
 
-.page22 #popUpMSG{
+.page22pm #popUpMSG,.page22 #popUpMSG{
   display: none;
   margin-top: 10%;
   position: fixed;
@@ -218,7 +218,7 @@ div.NCBirth div.ui-input-text{
   z-index: 9999;
   left: 5%;
 }
-.page22 #popUpMSG .row-in-row.backgroundBlue.alignCenter{
+.page22pm #popUpMSG .row-in-row.backgroundBlue.alignCenter,.page22 #popUpMSG .row-in-row.backgroundBlue.alignCenter{
   margin-bottom: 0;
 }
 
@@ -344,9 +344,7 @@ div.NCBirth div.ui-input-text{
   min-height: 250px;
   background: #fff;
 }
-/*.page101 #footerBtn{
-  padding: 0;
-}*/
+
 .page101 .content .ui-btn{
   position: fixed;
   width: 100%;
@@ -359,4 +357,18 @@ div.NCBirth div.ui-input-text{
 /*============= 10-2 프로필 ============*/
 .page102 .row, .page23 .row{
   border: none;
+}
+
+/*============== 10-2-pw ===========*/
+.page102pw .row, .page102pw .row-in-row{
+  border-bottom: none;
+}
+.page102pw .content .ui-btn{
+  position: fixed;
+  width: 100%;
+  bottom:0;
+}
+.page102pw button{
+  text-indent: inherit;
+  height: 60px;
 }
