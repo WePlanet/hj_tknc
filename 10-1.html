@@ -46,15 +46,17 @@
         <div data-role="content" class="content">
           <div class="row background101">
             <div class="row-in-row">
-              <form name="form101">
+              <form id="form101" action="test.php" method="get">
                 <input type="text" placeholder="(제목을 입력해주세요.)">
                 <textarea placeholder="(문의 내역을 입력해 주세요.)"></textarea>
+
               </form>
             </div>
           </div>
-          <button type="submit" form="form101" value="Submit" class="backgroundBlue">문의하기</button>
+
         </div>
         <!-- /바디 -->
+        <button type="submit" form="form101" value="Submit" class="backgroundBlue">문의하기</button>
     </div>
 
 </body>
