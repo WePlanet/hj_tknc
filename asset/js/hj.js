@@ -28,10 +28,21 @@ $( document ).ready(function() {
     $('#closed').click(function(){
       $('#popUpMSG').css('display','none');
     });
-
-
-
   }());
+
+// 2-4-1 클릭할때 버튼 벨류 바꾸기
+  (function(){
+      $("#elecBTN").click(function(){
+        $("#BTN241").val(1);
+        $('#elecImg').attr("src","asset/images/2-4-1.png");
+        $('#mechImg').attr('src','asset/images/2-4-4.png');
+      });
+      $("#mechBTN").click(function(){
+        $("#BTN241").val(2);
+        $('#elecImg').attr("src","asset/images/2-4-2.png");
+        $('#mechImg').attr('src','asset/images/2-4-3.png');
+      });
+    }());
 
 
   // 2-5-1 플러스 마이너스 버튼

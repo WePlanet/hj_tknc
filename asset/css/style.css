@@ -218,7 +218,9 @@ div.NCBirth div.ui-input-text{
   z-index: 9999;
   left: 5%;
 }
-.page22pm #popUpMSG .row-in-row.backgroundBlue.alignCenter,.page22 #popUpMSG .row-in-row.backgroundBlue.alignCenter{
+.page22pm #popUpMSG .row-in-row.backgroundBlue.alignCenter,
+.page22 #popUpMSG .row-in-row.backgroundBlue.alignCenter,
+.page241 #popUpMSG .row-in-row.backgroundBlue.alignCenter{
   margin-bottom: 0;
 }
 
@@ -265,6 +267,7 @@ div.NCBirth div.ui-input-text{
 .page241 #popUpMSG .inLine.col12 img{
   width: 70%;
 }
+.page241 .ui-btn{margin: 0;}
 
 /*============== 2-4-3 =================*/
 .searchForm.blueLine{
@@ -288,7 +291,7 @@ div.NCBirth div.ui-input-text{
   background: #0097E0;
   border-radius: 1.5em;
 }
-.searchForm.blueLine .ui-btn-hidden ,.page243 .searchForm .ui-btn-hidden{
+.searchForm.blueLine .ui-btn-hidden ,.page243 .searchForm .ui-btn-hidden,.page241 Form .ui-btn-hidden{
   text-indent: inherit;
 }
 
