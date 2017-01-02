@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+
+  $(document).bind('mobileinit',function(){
+      $.mobile.keepNative = "select,input"; /* jQuery Mobile 1.4 and higher */
+      //$.mobile.page.prototype.options.keepNative = "select, input"; /* jQuery Mobile 1.4 and lower */
+ });
+ 
   //2-1 에서 클릭하면 창 내려오게
   $(".showBox").on("click", function(){
     $(".clickShowBox").toggle("fast",function(){
