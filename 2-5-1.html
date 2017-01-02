@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=yes">
@@ -13,18 +14,18 @@
 </head>
 
 <body class="page251">
-    <div data-role="page" data-theme="d" data-url="demo-page">
-
+    <div data-role="page" data-theme="d" data-url="demo-page" id="page251">
         <div data-role="panel" id="left-panel" data-theme="b" data-display="overlay">
             <div class="row">
-              <div id="panel-logo" class="backgroundBlue">
-                <img src="asset/images/sidelogo.jpg">
-              </div>
+                <div id="panel-logo" class="backgroundBlue">
+                    <img src="asset/images/sidelogo.jpg">
+                </div>
             </div>
             <div class="row">
-              <div id="panel-menu">
-                <ul>
-                  <li class="backgroundBlue profile"><h2>조덕기</h2><span>서비스 1팅 / 팀장<span></li>
+                <div id="panel-menu">
+                    <ul>
+                        <li class="backgroundBlue profile">
+                            <h2>조덕기</h2><span>서비스 1팅 / 팀장<span></li>
                   <li class="blue"><a href="#"><h2><h2>주요기능</h2></a></li>
                   <li class="blue"><a href="#"><h2><h2>스마트 NC 홈</h2></a></li>
                   <li class="blue"><a href="#"><h2><h2>내 프로필</h2></a></li>
@@ -39,7 +40,7 @@
 
         <div data-role="header" data-theme="b" class="header backgroundBlue">
             <h1>NC 등록</h1>
-            <a href="#left-panel" id="sideOpener" data-theme="d" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open left panel</a>
+            <a href="#left-panel" id="sideOpener" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open left panel</a>
         </div>
         <!-- /헤더 -->
 
@@ -47,52 +48,177 @@
           <form>
             <div class="row">
               <div class="row-in-row blue">
-                <a href="#">
-                  <p>발생부서 (필수) <span class="date-page-21"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></span></p>
+                <a href="#bar1">
+                  <p>발생부서 (필수)
+                    <span class="date-page-21">
+                      <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                    </span>
+                    <input type="hidden" id="form25depart" name="form25depart" value="">
+                  </p>
                 </a>
               </div>
-              <div class="row-in-row">
-                <a href="#">
-                  <p>부품상세정보 <span class="date-page-21"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></span></p>
-                </a>
-              </div>
-              <div class="row-in-row  blue address">
-                <a href="#">
-                  <p>배송지 (필수) <span class="date-page-21">경기도 용인시 수지구 신봉동</span></p>
-                </a>
-              </div>
-              <div class="row-in-row">
-                <a href="#">
-                  <p>대신화물 <span class="date-page-21"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></span></p>
-                </a>
-              </div>
-              <div class="row-in-row  blue wantDate">
-                  <p>출하요구일 (필수) <span class="date-page-21"><input type="date"></span></p>
-                  <a href="#"><p class="alignRight">최대한 빨리 보내주세요. <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></p></a>
-              </div>
-              <div class="row-in-row blue pQ">
-                <p>수량 <span class="date-page-21 alignRight"> <i class="fa fa-plus" aria-hidden="true" id="plusBtn"></i> <input type="number" value="1" id="productQuantity" min="0" > <i class="fa fa-minus" aria-hidden="true" id="minusBtn"></i> </span></p>
-              </div>
-              <div class="row-in-row">
-                <a href="#">
-                  <p>조치비용 <span class="date-page-21"><input type="number">원</span></p>
-                </a>
-              </div>
-              <div class="row-in-row last">
-                  <p>NC 발생 내역</p>
-                  <textarea placeholder="(발생 내역을 적어주세요.)"></textarea>
-              </div>
+                <div class="row-in-row">
+                    <a href="#">
+                      <p>부품상세정보
+                        <span class="date-page-21">
+                          <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                        </span>
+                      </p>
+                    </a>
+                </div>
+                <div class="row-in-row  blue address">
+                    <a href="#">
+                        <p>배송지 (필수) <span class="date-page-21">경기도 용인시 수지구 신봉동</span>
+                          <input type="hidden" id="form25address" name="form25address" value="경기도 용인시 수지구 신봉동">
+                        </p>
+                    </a>
+                </div>
+                <div class="row-in-row">
+                    <a href="#bar2">
+                        <p>대신화물
+                          <span class="date-page-21"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></span>
+                          <input type="hidden" id="form25hm" name="form25hm" value="">
+                        </p>
+                    </a>
+                </div>
+                <div class="row-in-row  blue wantDate">
+                    <p>출하요구일 (필수) <span class="date-page-21"><input type="date"></span></p>
+                    <a href="#bar3">
+                        <p class="alignRight" id="page25sendWords">최대한 빨리 보내주세요. <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></p>
+                    </a>
+                </div>
+                <div class="row-in-row blue pQ">
+                    <p>수량 <span class="date-page-21 alignRight"> <i class="fa fa-plus" aria-hidden="true" id="plusBtn"></i> <input type="number" value="1" id="productQuantity" min="0" > <i class="fa fa-minus" aria-hidden="true" id="minusBtn"></i> </span></p>
+                </div>
+                <div class="row-in-row">
+                    <a href="#">
+                        <p>조치비용 <span class="date-page-21"><input type="number" name="form25money">원</span></p>
+                    </a>
+                </div>
+                <div class="row-in-row last">
+                    <p>NC 발생 내역</p>
+                    <textarea placeholder="(발생 내역을 적어주세요.)"></textarea>
+                </div>
             </div>
-          </form>
+            </form>
         </div>
         <!-- /바디 -->
         <a href="#">
-          <div id="footerBtn" class="row backgroundBlue alignCenter">
-            다음 단계
-          </div>
+            <div id="footerBtn" class="row backgroundBlue alignCenter">
+                다음 단계
+            </div>
         </a>
 
     </div>
+
+    <!-- ***************** 발생부서 **************** -->
+    <div data-role="page" id="bar1">
+        <div data-role="header" class="header backgroundBlue">
+            <h1>발생부서</h1>
+            <a href="#page251" id="sideOpener" data-theme="d" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open left panel</a>
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div class="row">
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>서울무상</p>
+                    </div>
+                </a>
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>공사무상</p>
+                    </div>
+                </a>
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>경남사무소 무상</p>
+                    </div>
+                </a>
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>경북사무소 무상</p>
+                    </div>
+                </a>
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>대전사무소 무상</p>
+                    </div>
+                </a>
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>호남사무소 무상</p>
+                    </div>
+                </a>
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>E/S 무상</p>
+                    </div>
+                </a>
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>E/S 유상</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- /content -->
+    </div>
+    <!-- /발생부서 page -->
+
+    <!-- ***************** 전송문구 **************** -->
+    <div data-role="page" id="bar3">
+        <div data-role="header" class="header backgroundBlue">
+            <h1>전송문구</h1>
+            <a href="#page251" id="sideOpener" data-theme="d" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open left panel</a>
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div class="row">
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>없음</p>
+                    </div>
+                </a>
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>최대한 빠르게 보내주세요</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- /content -->
+    </div>
+    <!-- /전송문구 page -->
+
+
+    <!-- ***************** 전송문구 **************** -->
+    <div data-role="page" id="bar3">
+        <div data-role="header" class="header backgroundBlue">
+            <h1>전송문구</h1>
+            <a href="#page251" id="sideOpener" data-theme="d" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open left panel</a>
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div class="row">
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>없음</p>
+                    </div>
+                </a>
+                <a href="#page251">
+                    <div class="row-in-row">
+                        <p>최대한 빠르게 보내주세요</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- /content -->
+    </div>
+    <!-- /전송문구 page -->
 
 </body>
 

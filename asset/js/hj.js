@@ -4,7 +4,7 @@ $( document ).ready(function() {
       $.mobile.keepNative = "select,input"; /* jQuery Mobile 1.4 and higher */
       //$.mobile.page.prototype.options.keepNative = "select, input"; /* jQuery Mobile 1.4 and lower */
  });
- 
+
   //2-1 에서 클릭하면 창 내려오게
   $(".showBox").on("click", function(){
     $(".clickShowBox").toggle("fast",function(){
@@ -50,6 +50,21 @@ $( document ).ready(function() {
       });
     }());
 
+  // 2-5-1 선택 폼
+  (function(){
+    // 발생부서 클릭하면 값에 index 값을 적용
+    $("#bar1 a").click(function(){
+      $("#form25depart").val($(this).index());
+    });
+    //전송문구
+    var sendWords = ['없음 <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>' ,'최대한 빠르게 보내주세요. <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'];
+    $("#bar3 a").click(function(){
+      $("#form25part").val(sendWords[$(this).index()]);
+      $("#page25sendWords").html(sendWords[$(this).index()]);
+    });
+
+  }());
+
 
   // 2-5-1 플러스 마이너스 버튼
   (function(){
@@ -67,7 +82,6 @@ $( document ).ready(function() {
           alert("0보다 작을 수 없어요.")
         }
       });
-
   }());
 
 });
