@@ -59,7 +59,7 @@ $( document ).ready(function() {
     //전송문구
     var sendWords = ['없음 <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>' ,'최대한 빠르게 보내주세요. <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'];
     $("#bar3 a").click(function(){
-      $("#form25part").val(sendWords[$(this).index()]);
+      $("#form25sendWords").val(sendWords[$(this).index()]);
       $("#page25sendWords").html(sendWords[$(this).index()]);
     });
 
