@@ -34,7 +34,7 @@ a{
 
 /*자주쓸클래스 미리 잡아놓자*/
 .backgroundBlue{
-  background: #0097E0;
+  background: #1BA2F2;
   color: #fff;
 }
 .backgroundWhite{
@@ -42,7 +42,7 @@ a{
   color: #343434;
 }
 .blue{
-  color: #0097E0;
+  color: #1BA2F2;
 }
 .alignLeft{text-align: left;}.alignRight{text-align: right;}.alignCenter{text-align: center;}
 .row{
@@ -330,6 +330,11 @@ div.NCBirth div.ui-input-text{
 .page251 .last{
   margin-bottom: 80px;
 }
+
+/*===============2-5-4=================*/
+/*.page251.page254 .row-in-row span.date-page-21{
+  color:
+}*/
 
 /*============== 10-1 ==================*/
 
