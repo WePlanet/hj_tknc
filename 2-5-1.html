@@ -45,7 +45,7 @@
         <!-- /헤더 -->
 
         <div data-role="content">
-          <form>
+          <form id="form251">
             <div class="row">
               <div class="row-in-row blue">
                 <a href="#bar1">
@@ -85,8 +85,8 @@
                     <p>출하요구일 (필수) <span class="date-page-21"><input type="date"></span></p>
                     <a href="#bar3">
                         <p class="alignRight" id="page25sendWords">최대한 빨리 보내주세요. <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
-                          <input type="hidden" id="form25sendWords" name="form25sendWords" value="최대한 빨리 보내주세요.">
                         </p>
+                        <input type="hidden" id="form25sendWords" name="form25sendWords" value="1">
                     </a>
                 </div>
                 <div class="row-in-row blue pQ">
@@ -105,7 +105,7 @@
             </form>
         </div>
         <!-- /바디 -->
-        <a href="#">
+        <a href="#" id="page251submit">
             <div id="footerBtn" class="row backgroundBlue alignCenter">
                 다음 단계
             </div>
@@ -169,10 +169,10 @@
     </div>
     <!-- /발생부서 page -->
 
-    <!-- ***************** 전송문구 **************** -->
-    <div data-role="page" id="bar3">
+    <!-- ***************** 대신화물 **************** -->
+    <div data-role="page" id="bar2">
         <div data-role="header" class="header backgroundBlue">
-            <h1>전송문구</h1>
+            <h1>대신화물</h1>
             <a href="#page251" id="sideOpener" data-theme="d" data-icon="arrow-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Open left panel</a>
         </div>
         <!-- /header -->
@@ -181,12 +181,12 @@
             <div class="row">
                 <a href="#page251">
                     <div class="row-in-row">
-                        <p>없음</p>
+                        <p>대신화물</p>
                     </div>
                 </a>
                 <a href="#page251">
                     <div class="row-in-row">
-                        <p>최대한 빠르게 보내주세요</p>
+                        <p>일반화물</p>
                     </div>
                 </a>
             </div>

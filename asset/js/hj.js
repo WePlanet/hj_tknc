@@ -56,11 +56,21 @@ $( document ).ready(function() {
     $("#bar1 a").click(function(){
       $("#form25depart").val($(this).index());
     });
+    //대신화물
+    $("#bar2 a").click(function(){
+      $("#form25hm").val($(this).index());
+    });
+
     //전송문구
     var sendWords = ['없음 <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>' ,'최대한 빠르게 보내주세요. <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'];
     $("#bar3 a").click(function(){
-      $("#form25sendWords").val(sendWords[$(this).index()]);
+      $("#form25sendWords").val($(this).index());
       $("#page25sendWords").html(sendWords[$(this).index()]);
+    });
+
+    // submit
+    $("#page251submit").click(function(){
+      $("#form251").submit();
     });
 
   }());
