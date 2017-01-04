@@ -57,7 +57,9 @@ $( document ).ready(function() {
       $("#form25depart").val($(this).index());
     });
     //대신화물
+    var sendHM = ['대신화물 <span class="date-page-21"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></span>','일반화물 <span class="date-page-21"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></span>'];
     $("#bar2 a").click(function(){
+      $("#page25HM").html(sendHM[$(this).index()]);
       $("#form25hm").val($(this).index());
     });
 
