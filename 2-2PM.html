@@ -23,84 +23,122 @@
         <!-- /헤더 -->
 
         <div data-role="content">
-
-          <div id="popUpMSG">
-            <div class="row">
-              <div class="row-in-row backgroundBlue alignCenter"><h3>상품이름</h3></div>
-            </div>
-            <div class="row">
-              <div class="row-in-row alignCenter"><P>상품 설명 값을 넣어봅시다.</p></div>
-            </div>
-            <div class="row" id="closed">
-              <div class="row-in-row backgroundBlue alignCenter">
-                  <div class="inLine">
-                      <h3>닫기</h3>
-                  </div>
+          <form id="form22">
+            <div id="popUpMSG">
+              <div class="row">
+                <div class="row-in-row backgroundBlue alignCenter"><h3>상품이름</h3></div>
+              </div>
+              <div class="row">
+                <div class="row-in-row alignCenter"><P>상품 설명 값을 넣어봅시다.</p></div>
+              </div>
+              <div class="row" id="closed">
+                <div class="row-in-row backgroundBlue alignCenter">
+                    <div class="inLine">
+                        <h3>닫기</h3>
+                    </div>
+                </div>
               </div>
             </div>
-          </div>
+            <!-- 팝업창 -->
 
-          <div class="row">
-            <div class="row-in-row">
-              <p><span class="blue">등록일</span> <span class="date-page-21">날짜</span></p>
+            <div id="form22banReason">
+              <div class="row">
+                <div class="row-in-row backgroundBlue alignCenter"><h3>상품이름</h3></div>
+              </div>
+              <div class="row">
+                <div class="row-in-row alignCenter"><input type="text"></div>
+              </div>
+              <div class="row" id="closed">
+                <div class="row-in-row backgroundBlue alignCenter">
+                    <div class="inLine">
+                        <h3>반려사유제출</h3>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="row-in-row">
-              <p><span class="blue">등록자</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">담당 PM</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">발생부서</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">원인부서</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">NC no</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">SAP no</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">현장번호</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">현장명</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">부품명</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">부품번호</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row" id="detailNC">
-              <p><span class="blue">부품상세정보</span> <p id="dataDetailNC"></p></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">배송지</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">대신화물</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">출하요구일</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">NC발생내역</span> <p>나랏말싸미 듕귁에 달아 문자와로 서르 사맛띠 아니할쌔 이런 젼차로 어린 백셩이 니르고져 홀빼이셔도
-마참내 제 뜨들 시러펴디 못할 노미 하니라. 내 이랄 위하야 어엿비 너겨 새로 스믈여듧 자랄 맹가노니 사람마다 희여 수비니겨 날로 쑤메 뼌한킈 하고져 할따라미니라. </p></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">수량</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">조치비용</span> <span class="date-page-21">날짜</span></p>
-            </div>
-            <div class="row-in-row">
-              <p><span class="blue">반려 내역</span> <p>나랏말싸미 듕귁에 달아 문자와로 서르 사맛띠 아니할쌔 이런 젼차로 어린 백셩이 니르고져 홀빼이셔도
-마참내 제 뜨들 시러펴디 못할 노미 하니라. 내 이랄 위하야 어엿비 너겨 새로 스믈여듧 자랄 맹가노니 사람마다 희여 수비니겨 날로 쑤메 뼌한킈 하고져 할따라미니라.</p></p>
-            </div>
+            <!-- 반려 사유 팝업창  -->
 
+            <div class="row">
+              <div class="row-in-row">
+                <p><span class="blue">등록일</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22date" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">등록자</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22user" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">담당 PM</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22PM" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">발생부서</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22depart" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">원인부서</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22couse" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">NC no</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="NCno" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">SAP no</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22SAP" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">현장번호</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22placeNo" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">현장명</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22placeName" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">부품명</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22SpartName" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">부품번호</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22parNo" value="">
+              </div>
+              <div class="row-in-row" id="detailNC">
+                <p><span class="blue">부품상세정보</span> <p id="dataDetailNC"></p></p>
+                <input type="hidden" id="form22detailNC" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">배송지</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22destination" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">대신화물</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22HM" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">출하요구일</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22requestDate" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">NC발생내역</span> <p>나랏말싸미 듕귁에 달아 문자와로 서르 사맛띠 아니할쌔 이런 젼차로 어린 백셩이 니르고져 홀빼이셔도
+  마참내 제 뜨들 시러펴디 못할 노미 하니라. 내 이랄 위하야 어엿비 너겨 새로 스믈여듧 자랄 맹가노니 사람마다 희여 수비니겨 날로 쑤메 뼌한킈 하고져 할따라미니라. </p></p>
+              <input type="hidden" id="form22SAP" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">수량</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22amout" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">조치비용</span> <span class="date-page-21">날짜</span></p>
+                <input type="hidden" id="form22cost" value="">
+              </div>
+              <div class="row-in-row">
+                <p><span class="blue">반려 내역</span> <p>나랏말싸미 듕귁에 달아 문자와로 서르 사맛띠 아니할쌔 이런 젼차로 어린 백셩이 니르고져 홀빼이셔도
+  마참내 제 뜨들 시러펴디 못할 노미 하니라. 내 이랄 위하야 어엿비 너겨 새로 스믈여듧 자랄 맹가노니 사람마다 희여 수비니겨 날로 쑤메 뼌한킈 하고져 할따라미니라.</p></p>
+              <input type="hidden" id="form22why" value="">
+              </div>
+
+            </div>
           </div>
         </div>
         <!-- /바디 -->
@@ -113,8 +151,8 @@
         </div>-->
 
         <div id="footerBtn" class="row backgroundBlue alignCenter page22pm">
-          <a href="#">반려</a>
-          <a href="#">승인하기</a>
+          <a href="#" id="form22ban">반려</a>
+          <a href="#" id="form22submit">승인하기</a>
         </div>
 
     </div>

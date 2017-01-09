@@ -34,6 +34,13 @@ $( document ).ready(function() {
     $('#closed').click(function(){
       $('#popUpMSG').css('display','none');
     });
+
+    $("#form22submit").click(function(){
+      $("#form22").submit();
+    });
+
+    $("#form22ban").click()
+
   }());
 
 // 2-4-1 클릭할때 버튼 벨류 바꾸기
