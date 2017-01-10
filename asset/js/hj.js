@@ -6,10 +6,20 @@ $( document ).ready(function() {
  });
 
   //2-1 에서 클릭하면 창 내려오게
+  var toggleIcon = 1;
   $(".showBox").on("click", function(){
-    $(".clickShowBox").toggle("fast",function(){
-      $(".showBox").html("<p>ggg</p>");
-    });
+    if((toggleIcon%2)==1){
+      $(".showBox>img").css({
+        WebkitTransform: 'rotate(' + 180 + 'deg)'
+      });
+    }
+    else{
+      $(".showBox>img").css({
+        WebkitTransform: 'rotate(' + 0 + 'deg)'
+      });
+    }
+    toggleIcon++;
+    $(".clickShowBox").toggle("fast");
   });
 
   // 모든 A 태그에 data-ajax='false 추가
@@ -35,12 +45,18 @@ $( document ).ready(function() {
       $('#popUpMSG').css('display','none');
     });
 
+    $('#form22ban').click(function(){
+      $('#form22banReason').css('display','block');
+    });
+
+    $('#closedBan').click(function(){
+      $('#form22banReason').css('display','none');
+      $('#form22').submit();
+    });
+
     $("#form22submit").click(function(){
       $("#form22").submit();
     });
-
-    $("#form22ban").click()
-
   }());
 
 // 2-4-1 클릭할때 버튼 벨류 바꾸기
