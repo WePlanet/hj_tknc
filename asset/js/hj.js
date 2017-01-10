@@ -5,6 +5,8 @@ $( document ).ready(function() {
       //$.mobile.page.prototype.options.keepNative = "select, input"; /* jQuery Mobile 1.4 and lower */
  });
 
+ // $('button').closest('.ui-btn').hide();
+
   //2-1 에서 클릭하면 창 내려오게
   var toggleIcon = 1;
   $(".showBox").on("click", function(){
